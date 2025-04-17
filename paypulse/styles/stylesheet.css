@@ -1,0 +1,117 @@
+    /* Eric Meyer's Reset */
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tr, th, td,
+    article, aside, details, figcaption, footer, header, hgroup,
+    menu, nav, section,
+    summary {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for recognition */
+    article, aside, details, figcaption, footer, header, hgroup, menu, nav, section {
+      display: block;
+    }
+    body {
+      line-height: 1;
+    }
+    ol, ul {
+      list-style: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+      content: "";
+      content: none;
+    }
+    blockquote, q {
+      quotes: "" "";
+    }
+    
+    
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background: #f5f2e5;
+        letter-spacing: 0.05rem;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #wrapper {
+        background-image: url("/imgs/codepounder_A_vibrant_stylized_graph_with_upward-trending_lines_ea37bb9e-cc13-4e59-89cc-fb0ad7515e43.png");
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background-size: cover;
+        background-position: center;
+        flex: 1;
+    }
+
+    #container{
+        max-width: 600px;
+        background: #476c54;
+        border-radius: 1rem;
+        border: 1px solid #c1b375;
+    }
+    #container, #calculator{
+        padding:1.5rem;
+    }
+    #container p{
+        padding: 21px 0;
+    }
+    #container p, .mode-toggle{
+        color: #fcfcfc;
+        line-height: 1.5rem;
+    }
+    .mode-toggle{
+        padding: 15px 0;
+        border-top: 1px dashed;
+    }
+    #container h1{
+        color: #fae897;
+        text-align: center;
+        font-size: 3rem;
+        text-shadow: 0rem .2rem 0.8rem #222f3c, .1rem .2rem #6c6152;
+    }
+    #calculator{
+        background: #f5f2e6;
+        border-radius: 1rem;
+    }
+    .input-group {
+        margin: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    label {
+        flex: 1;
+    }
+    input {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1.5rem;
+        letter-spacing: .08rem;
+    }
+    input:focus {
+        outline: none;
+        border-color: #007bff;
+    }
