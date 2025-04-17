@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayPulse</title>
+    <link rel="stylesheet" href="styles/stylesheet.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="container">
+            <h1>PayPulse</h1>
+            <p>Knowing how your pay breaks down—yearly, monthly, weekly, daily, hourly, or even per second—helps you plan finances, budget smarter, and value your time. It’s key for negotiating salaries, comparing jobs, or managing expenses with confidence.</p>
+            <div class="mode-toggle">
+                <label><input type="radio" name="mode" value="salary" checked> Salary</label>
+                <label><input type="radio" name="mode" value="contract"> Contract</label>
+            </div>
+            <div id="calculator" class="salary-mode">
+                <div class="input-group salary">
+                    <label for="annual">Annual Salary ($):</label>
+                    <input type="text" id="annual" inputmode="decimal" pattern="[0-9,.]*">
+                </div>
+                <div class="input-group salary">
+                    <label for="monthly">Monthly Pay ($):</label>
+                    <input type="text" id="monthly" inputmode="decimal" pattern="[0-9,.]*">
+                </div>
+                <div class="input-group salary">
+                    <label for="weekly">Weekly Pay ($):</label>
+                    <input type="text" id="weekly" inputmode="decimal" pattern="[0-9,.]*">
+                </div>
+                <div class="input-group salary">
+                    <label for="daily">Daily Pay ($):</label>
+                    <input type="text" id="daily" inputmode="decimal" pattern="[0-9,.]*">
+                </div>
+                <div class="input-group salary">
+                    <label for="hourly">Hourly Pay ($):</label>
+                    <input type="text" id="hourly" inputmode="decimal" pattern="[0-9,.]*">
+                </div>
+                <div class="input-group salary">
+                    <label for="secondly">Pay per Second ($):</label>
+                    <input type="text" id="secondly" inputmode="decimal" pattern="[0-9,.]*">
+                </div>
+                <div class="input-group contract" style="display: none;">
+                    <label for="contract-length-years">Contract Length (Years):</label>
+                    <input type="text" id="contract-length-years" inputmode="numeric" pattern="[0-9,]*" value="1">
+                </div>
+                <div class="input-group contract" style="display: none;">
+                    <label for="contract-length-months">Contract Length (Months):</label>
+                    <input type="text" id="contract-length-months" inputmode="numeric" pattern="[0-9,]*" value="0">
+                </div>
+                <div class="input-group contract" style="display: none;">
+                    <label for="contract-length-days">Contract Length (Days):</label>
+                    <input type="text" id="contract-length-days" inputmode="numeric" pattern="[0-9,]*" value="0">
+                </div>
+                <div class="input-group contract" style="display: none;">
+                    <label for="contract-total">Total Contract ($):</label>
+                    <input type="text" id="contract-total" inputmode="decimal" pattern="[0-9,.]*">
+                </div>
+                <div class="input-group contract" style="display: none;">
+                    <label for="contract-annual">Annual Amount ($):</label>
+                    <input type="text" id="contract-annual" inputmode="decimal" pattern="[0-9,.]*">
+                </div>
+                <div class="input-group contract" style="display: none;">
+                    <label for="contract-hourly">Pay per Hour ($):</label>
+                    <input type="text" id="contract-hourly" inputmode="decimal" pattern="[0-9,.]*">
+                </div>
+                <div class="input-group contract" style="display: none;">
+                    <label for="contract-minute">Pay per Minute ($):</label>
+                    <input type="text" id="contract-minute" inputmode="decimal" pattern="[0-9,.]*">
+                </div>
+                <div class="input-group contract" style="display: none;">
+                    <label for="contract-secondly">Pay per Second ($):</label>
+                    <input type="text" id="contract-secondly" inputmode="decimal" pattern="[0-9,.]*">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
