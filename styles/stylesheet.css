@@ -54,7 +54,7 @@
     }
 
     #wrapper {
-        background-image: URL("/PayPulse/imgs/codepounder_A_vibrant_stylized_graph_with_upward-trending_lines_ea37bb9e-cc13-4e59-89cc-fb0ad7515e43.png");
+        background-image: URL("PayPulse/imgs/codepounder_A_vibrant_stylized_graph_with_upward-trending_lines_ea37bb9e-cc13-4e59-89cc-fb0ad7515e43.png");
         display: flex;
         align-items: center;
         justify-content: center;
