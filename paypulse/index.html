@@ -10,10 +10,16 @@
     <div id="wrapper">
         <div id="container">
             <h1>PayPulse</h1>
-            <p>Knowing how your pay breaks down—yearly, monthly, weekly, daily, hourly, or even per second—helps you plan finances, budget smarter, and value your time. It’s key for negotiating salaries, comparing jobs, or managing expenses with confidence.</p>
+            <p>Knowing how your pay breaks down—yearly, monthly, weekly, daily, hourly, or even per second—helps you plan finances, budget smarter, and value your time. It's key for negotiating salaries, comparing jobs, or managing expenses with confidence.</p>
             <div class="mode-toggle">
-                <label><input type="radio" name="mode" value="salary" checked> Salary</label>
-                <label><input type="radio" name="mode" value="contract"> Contract</label>
+                <label class="radio-label">
+                    <span>Salary</span>
+                    <input type="radio" name="mode" value="salary" checked>
+                </label>
+                <label class="radio-label">
+                    <span>Contract</span>
+                    <input type="radio" name="mode" value="contract">
+                </label>
             </div>
             <div id="calculator" class="salary-mode">
                 <div class="input-group salary">
